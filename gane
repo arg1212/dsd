@@ -1,0 +1,865 @@
+
+--Converted with ttyyuu12345's model to script plugin v4
+function sandbox(var,func)
+	local env = getfenv(func)
+	local newenv = setmetatable({},{
+		__index = function(self,k)
+			if k=="script" then
+				return var
+			else
+				return env[k]
+			end
+		end,
+	})
+	setfenv(func,newenv)
+	return func
+end
+cors = {}
+mas = Instance.new("Model",game:GetService("Lighting"))
+ScreenGui0 = Instance.new("ScreenGui")
+Frame1 = Instance.new("Frame")
+Frame2 = Instance.new("Frame")
+TextButton3 = Instance.new("TextButton")
+LocalScript4 = Instance.new("LocalScript")
+TextLabel5 = Instance.new("TextLabel")
+Frame6 = Instance.new("Frame")
+TextButton7 = Instance.new("TextButton")
+LocalScript8 = Instance.new("LocalScript")
+TextButton9 = Instance.new("TextButton")
+LocalScript10 = Instance.new("LocalScript")
+TextButton11 = Instance.new("TextButton")
+LocalScript12 = Instance.new("LocalScript")
+Frame13 = Instance.new("Frame")
+TextButton14 = Instance.new("TextButton")
+LocalScript15 = Instance.new("LocalScript")
+TextBox16 = Instance.new("TextBox")
+TextButton17 = Instance.new("TextButton")
+LocalScript18 = Instance.new("LocalScript")
+TextButton19 = Instance.new("TextButton")
+LocalScript20 = Instance.new("LocalScript")
+TextButton21 = Instance.new("TextButton")
+LocalScript22 = Instance.new("LocalScript")
+Frame23 = Instance.new("Frame")
+TextButton24 = Instance.new("TextButton")
+LocalScript25 = Instance.new("LocalScript")
+TextBox26 = Instance.new("TextBox")
+TextButton27 = Instance.new("TextButton")
+LocalScript28 = Instance.new("LocalScript")
+TextButton29 = Instance.new("TextButton")
+LocalScript30 = Instance.new("LocalScript")
+TextButton31 = Instance.new("TextButton")
+LocalScript32 = Instance.new("LocalScript")
+Frame33 = Instance.new("Frame")
+TextButton34 = Instance.new("TextButton")
+LocalScript35 = Instance.new("LocalScript")
+TextButton36 = Instance.new("TextButton")
+LocalScript37 = Instance.new("LocalScript")
+LocalScript38 = Instance.new("LocalScript")
+ScreenGui0.Name = "screen"
+ScreenGui0.Parent = mas
+ScreenGui0.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+Frame1.Name = "start"
+Frame1.Parent = ScreenGui0
+Frame1.Position = UDim2.new(0.0272510052, 0, 0.0839506388, 0)
+Frame1.Size = UDim2.new(0, 406, 0, 251)
+Frame1.BackgroundColor = BrickColor.new("Black")
+Frame1.BackgroundColor3 = Color3.new(0.172549, 0.172549, 0.172549)
+Frame2.Name = "titleframe"
+Frame2.Parent = Frame1
+Frame2.Size = UDim2.new(0, 406, 0, 27)
+Frame2.BackgroundColor = BrickColor.new("Medium brown")
+Frame2.BackgroundColor3 = Color3.new(0.239216, 0.239216, 0.239216)
+Frame2.BackgroundTransparency = 0.20000000298023224
+TextButton3.Name = "Close"
+TextButton3.Parent = Frame2
+TextButton3.Position = UDim2.new(0.928571403, 0, 0, 0)
+TextButton3.Size = UDim2.new(0, 29, 0, 25)
+TextButton3.BackgroundColor = BrickColor.new("Institutional white")
+TextButton3.BackgroundColor3 = Color3.new(1, 1, 1)
+TextButton3.BackgroundTransparency = 1
+TextButton3.Font = Enum.Font.SourceSans
+TextButton3.FontSize = Enum.FontSize.Size28
+TextButton3.Text = "X"
+TextButton3.TextColor = BrickColor.new("Really red")
+TextButton3.TextColor3 = Color3.new(1, 0, 0)
+TextButton3.TextSize = 28
+LocalScript4.Parent = TextButton3
+table.insert(cors,sandbox(LocalScript4,function()
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.PlayerGui.screen.start.Visible = false
+	end)
+end))
+TextLabel5.Name = "title"
+TextLabel5.Parent = Frame2
+TextLabel5.Position = UDim2.new(0.0147783253, 0, 0, 0)
+TextLabel5.Size = UDim2.new(0, 77, 0, 27)
+TextLabel5.BackgroundColor = BrickColor.new("Institutional white")
+TextLabel5.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel5.BackgroundTransparency = 1
+TextLabel5.Font = Enum.Font.SourceSansBold
+TextLabel5.FontSize = Enum.FontSize.Size14
+TextLabel5.Text = "SkyHax"
+TextLabel5.TextColor = BrickColor.new("Institutional white")
+TextLabel5.TextColor3 = Color3.new(1, 1, 1)
+TextLabel5.TextScaled = true
+TextLabel5.TextSize = 14
+TextLabel5.TextWrap = true
+TextLabel5.TextWrapped = true
+Frame6.Name = "opsframe"
+Frame6.Parent = Frame1
+Frame6.Position = UDim2.new(0, 0, 0.107569724, 0)
+Frame6.Size = UDim2.new(0, 102, 0, 225)
+Frame6.BackgroundColor = BrickColor.new("Black")
+Frame6.BackgroundColor3 = Color3.new(0.207843, 0.207843, 0.207843)
+TextButton7.Name = "main"
+TextButton7.Parent = Frame6
+TextButton7.Position = UDim2.new(0.059279114, 0, 0.0486941189, 0)
+TextButton7.Size = UDim2.new(0, 88, 0, 35)
+TextButton7.BackgroundColor = BrickColor.new("Institutional white")
+TextButton7.BackgroundColor3 = Color3.new(1, 1, 1)
+TextButton7.Font = Enum.Font.SourceSansBold
+TextButton7.FontSize = Enum.FontSize.Size36
+TextButton7.Text = "Main"
+TextButton7.TextColor = BrickColor.new("Really black")
+TextButton7.TextColor3 = Color3.new(0, 0, 0)
+TextButton7.TextSize = 34
+TextButton7.TextWrap = true
+TextButton7.TextWrapped = true
+LocalScript8.Parent = TextButton7
+table.insert(cors,sandbox(LocalScript8,function()
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.PlayerGui.screen.start.mainframe.Visible = true
+		game.Players.LocalPlayer.PlayerGui.screen.start.miscframe.Visible = false
+		game.Players.LocalPlayer.PlayerGui.screen.start.selfframe.Visible = false
+	end)
+end))
+TextButton9.Name = "self"
+TextButton9.Parent = Frame6
+TextButton9.Position = UDim2.new(0.0494752824, 0, 0.257583022, 0)
+TextButton9.Size = UDim2.new(0, 88, 0, 35)
+TextButton9.BackgroundColor = BrickColor.new("Institutional white")
+TextButton9.BackgroundColor3 = Color3.new(1, 1, 1)
+TextButton9.Font = Enum.Font.SourceSansBold
+TextButton9.FontSize = Enum.FontSize.Size36
+TextButton9.Text = "Self"
+TextButton9.TextColor = BrickColor.new("Really black")
+TextButton9.TextColor3 = Color3.new(0, 0, 0)
+TextButton9.TextSize = 34
+TextButton9.TextWrap = true
+TextButton9.TextWrapped = true
+LocalScript10.Parent = TextButton9
+table.insert(cors,sandbox(LocalScript10,function()
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.PlayerGui.screen.start.selfframe.Visible = true
+		game.Players.LocalPlayer.PlayerGui.screen.start.mainframe.Visible = false
+		game.Players.LocalPlayer.PlayerGui.screen.start.miscframe.Visible = false
+	end)
+end))
+TextButton11.Name = "misc"
+TextButton11.Parent = Frame6
+TextButton11.Position = UDim2.new(0.0494752824, 0, 0.46202746, 0)
+TextButton11.Size = UDim2.new(0, 88, 0, 35)
+TextButton11.BackgroundColor = BrickColor.new("Institutional white")
+TextButton11.BackgroundColor3 = Color3.new(1, 1, 1)
+TextButton11.Font = Enum.Font.SourceSansBold
+TextButton11.FontSize = Enum.FontSize.Size36
+TextButton11.Text = "Misc"
+TextButton11.TextColor = BrickColor.new("Really black")
+TextButton11.TextColor3 = Color3.new(0, 0, 0)
+TextButton11.TextSize = 34
+TextButton11.TextWrap = true
+TextButton11.TextWrapped = true
+LocalScript12.Parent = TextButton11
+table.insert(cors,sandbox(LocalScript12,function()
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.PlayerGui.screen.start.miscframe.Visible = true
+		game.Players.LocalPlayer.PlayerGui.screen.start.mainframe.Visible = false
+		game.Players.LocalPlayer.PlayerGui.screen.start.selfframe.Visible = false
+	end)
+end))
+Frame13.Name = "miscframe"
+Frame13.Parent = Frame6
+Frame13.Position = UDim2.new(0.248768479, 0, 0.12350598, 0)
+Frame13.Visible = false
+Frame13.Size = UDim2.new(0, 299, 0, 214)
+Frame13.BackgroundColor = BrickColor.new("Institutional white")
+Frame13.BackgroundColor3 = Color3.new(1, 1, 1)
+Frame13.BackgroundTransparency = 1
+TextButton14.Name = "speedbutton"
+TextButton14.Parent = Frame13
+TextButton14.Position = UDim2.new(0.204013377, 0, 0.0467289686, 0)
+TextButton14.Size = UDim2.new(0, 63, 0, 28)
+TextButton14.BackgroundColor = BrickColor.new("Institutional white")
+TextButton14.BackgroundColor3 = Color3.new(1, 1, 1)
+TextButton14.Font = Enum.Font.SourceSans
+TextButton14.FontSize = Enum.FontSize.Size14
+TextButton14.Text = "WalkSpeed"
+TextButton14.TextColor = BrickColor.new("Really black")
+TextButton14.TextColor3 = Color3.new(0, 0, 0)
+TextButton14.TextScaled = true
+TextButton14.TextSize = 14
+TextButton14.TextWrap = true
+TextButton14.TextWrapped = true
+LocalScript15.Name = "speed"
+LocalScript15.Parent = TextButton14
+table.insert(cors,sandbox(LocalScript15,function()
+	script.Parent.MouseButton1Click:Connect(function()
+		local player = game.Players.LocalPlayer
+		local setspeed = script.Parent.Parent.speedbox.Text
+		local hum = game.Workspace:WaitForChild(player.Name).Humanoid
+		if hum then
+			hum.WalkSpeed = setspeed
+		end
+	end)
+end))
+TextBox16.Name = "speedbox"
+TextBox16.Parent = Frame13
+TextBox16.Position = UDim2.new(0.0234113708, 0, 0.0467289723, 0)
+TextBox16.Size = UDim2.new(0, 53, 0, 28)
+TextBox16.BackgroundColor = BrickColor.new("Institutional white")
+TextBox16.BackgroundColor3 = Color3.new(1, 1, 1)
+TextBox16.Font = Enum.Font.SourceSans
+TextBox16.FontSize = Enum.FontSize.Size14
+TextBox16.Text = "PutSpeed"
+TextBox16.TextColor = BrickColor.new("Really black")
+TextBox16.TextColor3 = Color3.new(0, 0, 0)
+TextBox16.TextSize = 14
+TextButton17.Name = "flybutton"
+TextButton17.Parent = Frame13
+TextButton17.Position = UDim2.new(0.0234113708, 0, 0.214953274, 0)
+TextButton17.Size = UDim2.new(0, 87, 0, 28)
+TextButton17.BackgroundColor = BrickColor.new("Institutional white")
+TextButton17.BackgroundColor3 = Color3.new(1, 1, 1)
+TextButton17.Font = Enum.Font.SourceSans
+TextButton17.FontSize = Enum.FontSize.Size14
+TextButton17.Text = "Fly (Press E To Toggle)"
+TextButton17.TextColor = BrickColor.new("Really black")
+TextButton17.TextColor3 = Color3.new(0, 0, 0)
+TextButton17.TextScaled = true
+TextButton17.TextSize = 14
+TextButton17.TextWrap = true
+TextButton17.TextWrapped = true
+LocalScript18.Parent = TextButton17
+table.insert(cors,sandbox(LocalScript18,function()
+	script.Parent.MouseButton1Click:Connect(function()
+
+		repeat wait() 
+		until game.Players.LocalPlayer and game.Players.LocalPlayer.Character and game.Players.LocalPlayer.Character:findFirstChild("Head") and game.Players.LocalPlayer.Character:findFirstChild("Humanoid") 
+		local mouse = game.Players.LocalPlayer:GetMouse() 
+		repeat wait() until mouse
+		local plr = game.Players.LocalPlayer 
+		local torso = plr.Character.Head 
+		local flying = false
+		local deb = true 
+		local ctrl = {f = 0, b = 0, l = 0, r = 0} 
+		local lastctrl = {f = 0, b = 0, l = 0, r = 0} 
+		local maxspeed = 400 
+		local speed = 5000 
+
+		function Fly() 
+			local bg = Instance.new("BodyGyro", torso) 
+			bg.P = 9e4 
+			bg.maxTorque = Vector3.new(9e9, 9e9, 9e9) 
+			bg.cframe = torso.CFrame 
+			local bv = Instance.new("BodyVelocity", torso) 
+			bv.velocity = Vector3.new(0,0.1,0) 
+			bv.maxForce = Vector3.new(9e9, 9e9, 9e9) 
+			repeat wait() 
+				plr.Character.Humanoid.PlatformStand = true 
+				if ctrl.l + ctrl.r ~= 0 or ctrl.f + ctrl.b ~= 0 then 
+					speed = speed+.5+(speed/maxspeed) 
+					if speed > maxspeed then 
+						speed = maxspeed 
+					end 
+				elseif not (ctrl.l + ctrl.r ~= 0 or ctrl.f + ctrl.b ~= 0) and speed ~= 0 then 
+					speed = speed-1 
+					if speed < 0 then 
+						speed = 0 
+					end 
+				end 
+				if (ctrl.l + ctrl.r) ~= 0 or (ctrl.f + ctrl.b) ~= 0 then 
+					bv.velocity = ((game.Workspace.CurrentCamera.CoordinateFrame.lookVector * (ctrl.f+ctrl.b)) + ((game.Workspace.CurrentCamera.CoordinateFrame * CFrame.new(ctrl.l+ctrl.r,(ctrl.f+ctrl.b)*.2,0).p) - game.Workspace.CurrentCamera.CoordinateFrame.p))*speed 
+					lastctrl = {f = ctrl.f, b = ctrl.b, l = ctrl.l, r = ctrl.r} 
+				elseif (ctrl.l + ctrl.r) == 0 and (ctrl.f + ctrl.b) == 0 and speed ~= 0 then 
+					bv.velocity = ((game.Workspace.CurrentCamera.CoordinateFrame.lookVector * (lastctrl.f+lastctrl.b)) + ((game.Workspace.CurrentCamera.CoordinateFrame * CFrame.new(lastctrl.l+lastctrl.r,(lastctrl.f+lastctrl.b)*.2,0).p) - game.Workspace.CurrentCamera.CoordinateFrame.p))*speed 
+				else 
+					bv.velocity = Vector3.new(0,0.1,0) 
+				end 
+				bg.cframe = game.Workspace.CurrentCamera.CoordinateFrame * CFrame.Angles(-math.rad((ctrl.f+ctrl.b)*50*speed/maxspeed),0,0) 
+			until not flying 
+			ctrl = {f = 0, b = 0, l = 0, r = 0} 
+			lastctrl = {f = 0, b = 0, l = 0, r = 0} 
+			speed = 0 
+			bg:Destroy() 
+			bv:Destroy() 
+			plr.Character.Humanoid.PlatformStand = false 
+		end 
+		mouse.KeyDown:connect(function(key) 
+			if key:lower() == "e" then 
+				if flying then flying = false 
+				else 
+					flying = true 
+					Fly() 
+				end 
+			elseif key:lower() == "w" then 
+				ctrl.f = 1 
+			elseif key:lower() == "s" then 
+				ctrl.b = -1 
+			elseif key:lower() == "a" then 
+				ctrl.l = -1 
+			elseif key:lower() == "d" then 
+				ctrl.r = 1 
+			end 
+		end) 
+		mouse.KeyUp:connect(function(key) 
+			if key:lower() == "w" then 
+				ctrl.f = 0 
+			elseif key:lower() == "s" then 
+				ctrl.b = 0 
+			elseif key:lower() == "a" then 
+				ctrl.l = 0 
+			elseif key:lower() == "d" then 
+				ctrl.r = 0 
+			end 
+		end)
+		Fly()
+	end)
+end))
+TextButton19.Name = "tpbutton"
+TextButton19.Parent = Frame13
+TextButton19.Position = UDim2.new(0.0234113708, 0, 0.378504694, 0)
+TextButton19.Size = UDim2.new(0, 87, 0, 28)
+TextButton19.BackgroundColor = BrickColor.new("Institutional white")
+TextButton19.BackgroundColor3 = Color3.new(1, 1, 1)
+TextButton19.Font = Enum.Font.SourceSans
+TextButton19.FontSize = Enum.FontSize.Size14
+TextButton19.Text = "Click To TP  (Press P To TP)"
+TextButton19.TextColor = BrickColor.new("Really black")
+TextButton19.TextColor3 = Color3.new(0, 0, 0)
+TextButton19.TextScaled = true
+TextButton19.TextSize = 14
+TextButton19.TextWrap = true
+TextButton19.TextWrapped = true
+LocalScript20.Parent = TextButton19
+table.insert(cors,sandbox(LocalScript20,function()
+	script.Parent.MouseButton1Click:Connect(function()
+
+		local TELEPORT_HOTKEY = 'p'
+		local SPEED_LIMITER = 90
+
+		if _G.teleport_disconnect then
+			_G.teleport_disconnect()
+		end
+
+		local service = setmetatable({ }, {
+			__index = function(self, key)
+				return game:GetService(key)
+			end
+		})
+
+		local user = service.Players.LocalPlayer
+		local mouse = user:GetMouse()
+
+		local get_target = function() -- inspired by austin ❤️
+			local node = CFrame.new(mouse.UnitRay.Origin)
+			local hits = { }
+			while node do
+				local ray = mouse.UnitRay
+				ray = Ray.new(ray.Origin, ray.Direction * 1000)
+				local hit, position = workspace:FindPartOnRayWithIgnoreList(ray, {
+					user.Character,
+					unpack(hits)
+				})
+				if hit.Transparency == 0 then
+					return #hits == 0 and mouse.Hit or CFrame.new(position)
+				end
+				if hit then
+					hits[#hits + 1] = hit
+					node = CFrame.new(position) * (node - node.p)
+				else
+					return CFrame.new(position)
+				end
+			end
+		end
+
+		local teleport = function()
+			local WAIT_SPEED = 1 / 30
+
+			local root_part = user.Character:FindFirstChild('HumanoidRootPart') or user.Character:FindFirstChild('Torso')
+			root_part.Anchored = true
+			local target = get_target() + Vector3.new(0, 4, 0)
+			local start = root_part.CFrame
+			local distance = (target.p - start.p).magnitude
+			for i = 0, 1, (SPEED_LIMITER / distance) * WAIT_SPEED do
+				local new_position = start:lerp(target, i)
+				root_part.CFrame = new_position
+				wait(WAIT_SPEED)
+			end
+			root_part.Anchored = false
+		end
+
+		local event = service.UserInputService.InputBegan:Connect(function(key, game_processed)
+			if game_processed or key.KeyCode ~= Enum.KeyCode[string.upper(TELEPORT_HOTKEY)] then
+				return
+			end
+			return teleport()
+		end)
+
+		_G.teleport_disconnect = function()
+			event:Disconnect()
+			_G.teleport_disconnect = nil
+		end
+	end)
+end))
+TextButton21.Name = "infbutton"
+TextButton21.Parent = Frame13
+TextButton21.Position = UDim2.new(0.0234113708, 0, 0.537383199, 0)
+TextButton21.Size = UDim2.new(0, 87, 0, 28)
+TextButton21.BackgroundColor = BrickColor.new("Institutional white")
+TextButton21.BackgroundColor3 = Color3.new(1, 1, 1)
+TextButton21.Font = Enum.Font.SourceSans
+TextButton21.FontSize = Enum.FontSize.Size24
+TextButton21.Text = "Inf Jump"
+TextButton21.TextColor = BrickColor.new("Really black")
+TextButton21.TextColor3 = Color3.new(0, 0, 0)
+TextButton21.TextSize = 19
+TextButton21.TextWrap = true
+TextButton21.TextWrapped = true
+LocalScript22.Parent = TextButton21
+table.insert(cors,sandbox(LocalScript22,function()
+	script.Parent.MouseButton1Click:Connect(function()
+
+		local Player = game:GetService'Players'.LocalPlayer;
+		local UIS = game:GetService'UserInputService';
+
+		_G.JumpHeight = 50;
+
+		function Action(Object, Function) if Object ~= nil then Function(Object); end end
+
+		UIS.InputBegan:connect(function(UserInput)
+			if UserInput.UserInputType == Enum.UserInputType.Keyboard and UserInput.KeyCode == Enum.KeyCode.Space then
+				Action(Player.Character.Humanoid, function(self)
+					if self:GetState() == Enum.HumanoidStateType.Jumping or self:GetState() == Enum.HumanoidStateType.Freefall then
+						Action(self.Parent.HumanoidRootPart, function(self)
+							self.Velocity = Vector3.new(0, _G.JumpHeight, 0);
+						end)
+					end
+				end)
+			end
+		end)
+
+	end)
+end))
+Frame23.Name = "mainframe"
+Frame23.Parent = Frame1
+Frame23.Position = UDim2.new(0.248768479, 0, 0.12350598, 0)
+Frame23.Size = UDim2.new(0, 299, 0, 214)
+Frame23.BackgroundColor = BrickColor.new("Institutional white")
+Frame23.BackgroundColor3 = Color3.new(1, 1, 1)
+Frame23.BackgroundTransparency = 1
+TextButton24.Name = "speedbutton"
+TextButton24.Parent = Frame23
+TextButton24.Position = UDim2.new(0.204013377, 0, 0.0467289686, 0)
+TextButton24.Size = UDim2.new(0, 63, 0, 28)
+TextButton24.BackgroundColor = BrickColor.new("Institutional white")
+TextButton24.BackgroundColor3 = Color3.new(1, 1, 1)
+TextButton24.Font = Enum.Font.SourceSans
+TextButton24.FontSize = Enum.FontSize.Size14
+TextButton24.Text = "WalkSpeed"
+TextButton24.TextColor = BrickColor.new("Really black")
+TextButton24.TextColor3 = Color3.new(0, 0, 0)
+TextButton24.TextScaled = true
+TextButton24.TextSize = 14
+TextButton24.TextWrap = true
+TextButton24.TextWrapped = true
+LocalScript25.Name = "speed"
+LocalScript25.Parent = TextButton24
+table.insert(cors,sandbox(LocalScript25,function()
+	script.Parent.MouseButton1Click:Connect(function()
+		local player = game.Players.LocalPlayer
+		local setspeed = script.Parent.Parent.speedbox.Text
+		local hum = game.Workspace:WaitForChild(player.Name).Humanoid
+		if hum then
+			hum.WalkSpeed = setspeed
+		end
+	end)
+end))
+TextBox26.Name = "speedbox"
+TextBox26.Parent = Frame23
+TextBox26.Position = UDim2.new(0.0234113708, 0, 0.0467289723, 0)
+TextBox26.Size = UDim2.new(0, 53, 0, 28)
+TextBox26.BackgroundColor = BrickColor.new("Institutional white")
+TextBox26.BackgroundColor3 = Color3.new(1, 1, 1)
+TextBox26.Font = Enum.Font.SourceSans
+TextBox26.FontSize = Enum.FontSize.Size14
+TextBox26.Text = "PutSpeed"
+TextBox26.TextColor = BrickColor.new("Really black")
+TextBox26.TextColor3 = Color3.new(0, 0, 0)
+TextBox26.TextSize = 14
+TextButton27.Name = "flybutton"
+TextButton27.Parent = Frame23
+TextButton27.Position = UDim2.new(0.0234113708, 0, 0.214953274, 0)
+TextButton27.Size = UDim2.new(0, 87, 0, 28)
+TextButton27.BackgroundColor = BrickColor.new("Institutional white")
+TextButton27.BackgroundColor3 = Color3.new(1, 1, 1)
+TextButton27.Font = Enum.Font.SourceSans
+TextButton27.FontSize = Enum.FontSize.Size14
+TextButton27.Text = "Fly (Press E To Toggle)"
+TextButton27.TextColor = BrickColor.new("Really black")
+TextButton27.TextColor3 = Color3.new(0, 0, 0)
+TextButton27.TextScaled = true
+TextButton27.TextSize = 14
+TextButton27.TextWrap = true
+TextButton27.TextWrapped = true
+LocalScript28.Parent = TextButton27
+table.insert(cors,sandbox(LocalScript28,function()
+	script.Parent.MouseButton1Click:Connect(function()
+
+		repeat wait() 
+		until game.Players.LocalPlayer and game.Players.LocalPlayer.Character and game.Players.LocalPlayer.Character:findFirstChild("Head") and game.Players.LocalPlayer.Character:findFirstChild("Humanoid") 
+		local mouse = game.Players.LocalPlayer:GetMouse() 
+		repeat wait() until mouse
+		local plr = game.Players.LocalPlayer 
+		local torso = plr.Character.Head 
+		local flying = false
+		local deb = true 
+		local ctrl = {f = 0, b = 0, l = 0, r = 0} 
+		local lastctrl = {f = 0, b = 0, l = 0, r = 0} 
+		local maxspeed = 400 
+		local speed = 5000 
+
+		function Fly() 
+			local bg = Instance.new("BodyGyro", torso) 
+			bg.P = 9e4 
+			bg.maxTorque = Vector3.new(9e9, 9e9, 9e9) 
+			bg.cframe = torso.CFrame 
+			local bv = Instance.new("BodyVelocity", torso) 
+			bv.velocity = Vector3.new(0,0.1,0) 
+			bv.maxForce = Vector3.new(9e9, 9e9, 9e9) 
+			repeat wait() 
+				plr.Character.Humanoid.PlatformStand = true 
+				if ctrl.l + ctrl.r ~= 0 or ctrl.f + ctrl.b ~= 0 then 
+					speed = speed+.5+(speed/maxspeed) 
+					if speed > maxspeed then 
+						speed = maxspeed 
+					end 
+				elseif not (ctrl.l + ctrl.r ~= 0 or ctrl.f + ctrl.b ~= 0) and speed ~= 0 then 
+					speed = speed-1 
+					if speed < 0 then 
+						speed = 0 
+					end 
+				end 
+				if (ctrl.l + ctrl.r) ~= 0 or (ctrl.f + ctrl.b) ~= 0 then 
+					bv.velocity = ((game.Workspace.CurrentCamera.CoordinateFrame.lookVector * (ctrl.f+ctrl.b)) + ((game.Workspace.CurrentCamera.CoordinateFrame * CFrame.new(ctrl.l+ctrl.r,(ctrl.f+ctrl.b)*.2,0).p) - game.Workspace.CurrentCamera.CoordinateFrame.p))*speed 
+					lastctrl = {f = ctrl.f, b = ctrl.b, l = ctrl.l, r = ctrl.r} 
+				elseif (ctrl.l + ctrl.r) == 0 and (ctrl.f + ctrl.b) == 0 and speed ~= 0 then 
+					bv.velocity = ((game.Workspace.CurrentCamera.CoordinateFrame.lookVector * (lastctrl.f+lastctrl.b)) + ((game.Workspace.CurrentCamera.CoordinateFrame * CFrame.new(lastctrl.l+lastctrl.r,(lastctrl.f+lastctrl.b)*.2,0).p) - game.Workspace.CurrentCamera.CoordinateFrame.p))*speed 
+				else 
+					bv.velocity = Vector3.new(0,0.1,0) 
+				end 
+				bg.cframe = game.Workspace.CurrentCamera.CoordinateFrame * CFrame.Angles(-math.rad((ctrl.f+ctrl.b)*50*speed/maxspeed),0,0) 
+			until not flying 
+			ctrl = {f = 0, b = 0, l = 0, r = 0} 
+			lastctrl = {f = 0, b = 0, l = 0, r = 0} 
+			speed = 0 
+			bg:Destroy() 
+			bv:Destroy() 
+			plr.Character.Humanoid.PlatformStand = false 
+		end 
+		mouse.KeyDown:connect(function(key) 
+			if key:lower() == "e" then 
+				if flying then flying = false 
+				else 
+					flying = true 
+					Fly() 
+				end 
+			elseif key:lower() == "w" then 
+				ctrl.f = 1 
+			elseif key:lower() == "s" then 
+				ctrl.b = -1 
+			elseif key:lower() == "a" then 
+				ctrl.l = -1 
+			elseif key:lower() == "d" then 
+				ctrl.r = 1 
+			end 
+		end) 
+		mouse.KeyUp:connect(function(key) 
+			if key:lower() == "w" then 
+				ctrl.f = 0 
+			elseif key:lower() == "s" then 
+				ctrl.b = 0 
+			elseif key:lower() == "a" then 
+				ctrl.l = 0 
+			elseif key:lower() == "d" then 
+				ctrl.r = 0 
+			end 
+		end)
+		Fly()
+	end)
+end))
+TextButton29.Name = "tpbutton"
+TextButton29.Parent = Frame23
+TextButton29.Position = UDim2.new(0.0234113708, 0, 0.378504694, 0)
+TextButton29.Size = UDim2.new(0, 87, 0, 28)
+TextButton29.BackgroundColor = BrickColor.new("Institutional white")
+TextButton29.BackgroundColor3 = Color3.new(1, 1, 1)
+TextButton29.Font = Enum.Font.SourceSans
+TextButton29.FontSize = Enum.FontSize.Size14
+TextButton29.Text = "Click To TP  (Press P To TP)"
+TextButton29.TextColor = BrickColor.new("Really black")
+TextButton29.TextColor3 = Color3.new(0, 0, 0)
+TextButton29.TextScaled = true
+TextButton29.TextSize = 14
+TextButton29.TextWrap = true
+TextButton29.TextWrapped = true
+LocalScript30.Parent = TextButton29
+table.insert(cors,sandbox(LocalScript30,function()
+	script.Parent.MouseButton1Click:Connect(function()
+
+		local TELEPORT_HOTKEY = 'p'
+		local SPEED_LIMITER = 90
+
+		if _G.teleport_disconnect then
+			_G.teleport_disconnect()
+		end
+
+		local service = setmetatable({ }, {
+			__index = function(self, key)
+				return game:GetService(key)
+			end
+		})
+
+		local user = service.Players.LocalPlayer
+		local mouse = user:GetMouse()
+
+		local get_target = function() -- inspired by austin ❤️
+			local node = CFrame.new(mouse.UnitRay.Origin)
+			local hits = { }
+			while node do
+				local ray = mouse.UnitRay
+				ray = Ray.new(ray.Origin, ray.Direction * 1000)
+				local hit, position = workspace:FindPartOnRayWithIgnoreList(ray, {
+					user.Character,
+					unpack(hits)
+				})
+				if hit.Transparency == 0 then
+					return #hits == 0 and mouse.Hit or CFrame.new(position)
+				end
+				if hit then
+					hits[#hits + 1] = hit
+					node = CFrame.new(position) * (node - node.p)
+				else
+					return CFrame.new(position)
+				end
+			end
+		end
+
+		local teleport = function()
+			local WAIT_SPEED = 1 / 30
+
+			local root_part = user.Character:FindFirstChild('HumanoidRootPart') or user.Character:FindFirstChild('Torso')
+			root_part.Anchored = true
+			local target = get_target() + Vector3.new(0, 4, 0)
+			local start = root_part.CFrame
+			local distance = (target.p - start.p).magnitude
+			for i = 0, 1, (SPEED_LIMITER / distance) * WAIT_SPEED do
+				local new_position = start:lerp(target, i)
+				root_part.CFrame = new_position
+				wait(WAIT_SPEED)
+			end
+			root_part.Anchored = false
+		end
+
+		local event = service.UserInputService.InputBegan:Connect(function(key, game_processed)
+			if game_processed or key.KeyCode ~= Enum.KeyCode[string.upper(TELEPORT_HOTKEY)] then
+				return
+			end
+			return teleport()
+		end)
+
+		_G.teleport_disconnect = function()
+			event:Disconnect()
+			_G.teleport_disconnect = nil
+		end
+	end)
+end))
+TextButton31.Name = "infbutton"
+TextButton31.Parent = Frame23
+TextButton31.Position = UDim2.new(0.0234113708, 0, 0.537383199, 0)
+TextButton31.Size = UDim2.new(0, 87, 0, 28)
+TextButton31.BackgroundColor = BrickColor.new("Institutional white")
+TextButton31.BackgroundColor3 = Color3.new(1, 1, 1)
+TextButton31.Font = Enum.Font.SourceSans
+TextButton31.FontSize = Enum.FontSize.Size24
+TextButton31.Text = "Inf Jump"
+TextButton31.TextColor = BrickColor.new("Really black")
+TextButton31.TextColor3 = Color3.new(0, 0, 0)
+TextButton31.TextSize = 19
+TextButton31.TextWrap = true
+TextButton31.TextWrapped = true
+LocalScript32.Parent = TextButton31
+table.insert(cors,sandbox(LocalScript32,function()
+	script.Parent.MouseButton1Click:Connect(function()
+
+		local Player = game:GetService'Players'.LocalPlayer;
+		local UIS = game:GetService'UserInputService';
+
+		_G.JumpHeight = 50;
+
+		function Action(Object, Function) if Object ~= nil then Function(Object); end end
+
+		UIS.InputBegan:connect(function(UserInput)
+			if UserInput.UserInputType == Enum.UserInputType.Keyboard and UserInput.KeyCode == Enum.KeyCode.Space then
+				Action(Player.Character.Humanoid, function(self)
+					if self:GetState() == Enum.HumanoidStateType.Jumping or self:GetState() == Enum.HumanoidStateType.Freefall then
+						Action(self.Parent.HumanoidRootPart, function(self)
+							self.Velocity = Vector3.new(0, _G.JumpHeight, 0);
+						end)
+					end
+				end)
+			end
+		end)
+
+	end)
+end))
+Frame33.Name = "selfframe"
+Frame33.Parent = Frame1
+Frame33.Position = UDim2.new(0.248768479, 0, 0.12350598, 0)
+Frame33.Visible = false
+Frame33.Size = UDim2.new(0, 299, 0, 214)
+Frame33.BackgroundColor = BrickColor.new("Institutional white")
+Frame33.BackgroundColor3 = Color3.new(1, 1, 1)
+Frame33.BackgroundTransparency = 1
+TextButton34.Name = "afkbutton"
+TextButton34.Parent = Frame33
+TextButton34.Position = UDim2.new(0.0468227416, 0, 0.0280373842, 0)
+TextButton34.Size = UDim2.new(0, 87, 0, 28)
+TextButton34.BackgroundColor = BrickColor.new("Institutional white")
+TextButton34.BackgroundColor3 = Color3.new(1, 1, 1)
+TextButton34.Font = Enum.Font.SourceSans
+TextButton34.FontSize = Enum.FontSize.Size14
+TextButton34.Text = "AntiAFK"
+TextButton34.TextColor = BrickColor.new("Really black")
+TextButton34.TextColor3 = Color3.new(0, 0, 0)
+TextButton34.TextScaled = true
+TextButton34.TextSize = 14
+TextButton34.TextWrap = true
+TextButton34.TextWrapped = true
+LocalScript35.Parent = TextButton34
+table.insert(cors,sandbox(LocalScript35,function()
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://pastebin.com/raw/sDXcYFhR", true))()
+	end)
+end))
+TextButton36.Name = "autobutton"
+TextButton36.Parent = Frame33
+TextButton36.Position = UDim2.new(0.0468227416, 0, 0.191588789, 0)
+TextButton36.Size = UDim2.new(0, 87, 0, 28)
+TextButton36.BackgroundColor = BrickColor.new("Institutional white")
+TextButton36.BackgroundColor3 = Color3.new(1, 1, 1)
+TextButton36.Font = Enum.Font.SourceSans
+TextButton36.FontSize = Enum.FontSize.Size14
+TextButton36.Text = "AutoFarm"
+TextButton36.TextColor = BrickColor.new("Really black")
+TextButton36.TextColor3 = Color3.new(0, 0, 0)
+TextButton36.TextScaled = true
+TextButton36.TextSize = 14
+TextButton36.TextWrap = true
+TextButton36.TextWrapped = true
+LocalScript37.Parent = TextButton36
+table.insert(cors,sandbox(LocalScript37,function()
+	kVars = {} -- Table for all the variables
+	kVars.lp = game:GetService("Players").LocalPlayer
+	kVars.VirtualUser = game:GetService('VirtualUser')
+
+
+	script.Parent.MouseButton1Click:Connect(function()
+		kVars.boolDrive = bool
+		if bool then
+			fDrive()
+		else
+			keyrelease(87) 
+		end
+	end)
+
+	function fDrive()
+		spawn(function()
+			kVars.plrcar = "nil"
+			for i,v in pairs(game:GetService("Workspace").Cars:GetChildren()) do
+				if v:FindFirstChild("Stats") and v.Stats:FindFirstChild("Owner") then
+					if v.Stats.Owner.Value == kVars.lp.Name then
+						kVars.plrcar = v
+					end
+				end
+			end
+			while kVars.boolDrive do
+				wait()
+				if not workspace["Keaths Platform"] then
+					local part = Instance.new("Part")
+					part.Position = Vector3.new(0,60,0)
+					part.Size = Vector3.new(1000,5,1000)
+					part.Anchored = true
+					part.Name = "Keaths Platform"
+					part.CollisionGroupId = 5
+					part.Parent = workspace
+				end
+				kVars.plrcar:SetPrimaryPartCFrame(CFrame.new(0, 65, 0))
+				keypress(87)
+				wait(5)
+			end
+		end)
+	end
+end))
+LocalScript38.Name = "SmoothDrag"
+LocalScript38.Parent = Frame1
+table.insert(cors,sandbox(LocalScript38,function()
+	local Drag = script.Parent.Parent.start
+	gsCoreGui = game:GetService("CoreGui")
+	gsTween = game:GetService("TweenService")
+	local UserInputService = game:GetService("UserInputService")
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	local function update(input)
+		local delta = input.Position - dragStart
+		local dragTime = 0.04
+		local SmoothDrag = {}
+		SmoothDrag.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+		local dragSmoothFunction = gsTween:Create(Drag, TweenInfo.new(dragTime, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut), SmoothDrag)
+		dragSmoothFunction:Play()
+	end
+	Drag.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = Drag.Position
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	Drag.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	UserInputService.InputChanged:Connect(function(input)
+		if input == dragInput and dragging and Drag.Size then
+			update(input)
+		end
+	end)
+
+end))
+for i,v in pairs(mas:GetChildren()) do
+	v.Parent = game:GetService("Players").LocalPlayer.PlayerGui
+	pcall(function() v:MakeJoints() end)
+end
+mas:Destroy()
+for i,v in pairs(cors) do
+	spawn(function()
+		pcall(v)
+	end)
+end
